@@ -1,8 +1,8 @@
 # Assignment - Testing node and git
 
-**Due: Mon Oct 6, 11:59pm ** 
+**Due: Wed Sep 10, 11:59pm ** 
 
-EXCEPTION: If you joined the class after the first week, you will need to complete this assignment but the due date is Mon Oct 13, 11:59pm , same as the second assignment.  I highly encourage you complete this assignment as soon as possible, and as a courtesy to the TA, mention in the PR description that you joined the class late.
+EXCEPTION: If you joined the class after the first week, you will need to complete this assignment but the due date is Wed Sep 17, 11:59pm , same as the second assignment.  I highly encourage you complete this assignment as soon as possible, and as a courtesy to the TA, mention in the PR description that you joined the class late.
 
 ## Goal
 
