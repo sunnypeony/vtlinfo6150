@@ -1,0 +1,71 @@
+
+ * {box-sizing: border-box;}
+ /* ------ Primary Navigation Menu ------ */
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+.menu > li {
+    display: inline;
+}
+.menu a {
+    display: inline-block;
+    padding: 1rem;
+}
+.menu a:hover {
+    background-color:rebeccapurple;
+    color:aliceblue;
+}
+
+ /* ------ Lefthand Navigation Menu ------ */
+.local-menu > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.local-menu li {
+    padding: 1rem 0;    
+}
+.local-menu a{
+    display: inline-block;/*change from default 'inline' to 'inline block to change width*/
+    padding: 0.5rem;
+    width: 7rem;
+}
+.local-menu a:hover {
+    background-color: plum;
+}
+
+.local-menu ul {
+    text-align:start;
+}
+
+nav.local-menu {
+    display: inline-block;/*to make this block in the same line with main block*/
+    width: 20%;
+    vertical-align: top;
+    padding: 0 0.5rem;
+    padding-right: 1rem;
+}
+ /* --- Current Page Main Content --- */
+main {
+    display: inline-block;/*to make this block in the same line with nav.local-menu block*/
+    width: calc(80% - 1ch);
+    vertical-align: top;
+    margin-right: 0;
+    padding-left: 1rem;
+    border-left: 1px solid black;
+}
+
+ /* ------ General Backgroud Setting ------ */
+header, footer {
+    background-color: plum;
+}
+footer {
+    padding: 0.8rem;
+}
+body {
+    background-color:pink;
+    margin: 0;
+}
+
