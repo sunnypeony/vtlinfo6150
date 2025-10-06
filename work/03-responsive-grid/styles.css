@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-gap: 16px;
+    --main-padding: 16px;
+    --main-margin: 16px;
+}
+
+
+.header {
+    display: grid;
+    background-color: whitesmoke;
+}
+
+.logo {
+    display: block;
+    justify-self: center;
+}
+
+.header-title {
+    display: block;
+    margin: var(--main-margin) auto;
+    justify-self: left;
+    background-color: dimgray;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: gainsboro;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+    align-items: center;
+}
+
+.menu a {
+    padding: 1rem;
+}
+
+.menu a:hover {
+    background-color: rebeccapurple;
+    color: aliceblue;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--main-gap);
+    padding: var(--main-padding);
+}
+
+.news-header {
+    grid-column: span 12;
+    justify-self: center;
+    margin: 0;
+    padding: var(--main-padding);
+}
+
+.news-item {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    padding: var(--main-padding);
+    border: 1px solid darkgrey;
+    background-color: #fafafa;
+    height: 100;
+}
+
+.news-item-header {
+    margin: 0;
+    padding: var(--main-padding);
+}
+
+.card-button {
+    margin-top: auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+
+.footer {
+    grid-area: footer;
+    padding: 4px;
+    gap: 4px;
+    background-color: black;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.footer-items {
+    grid-column: span 12;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+
+@media (min-width: 50rem) {
+    .header {
+        grid-template-columns: auto 1fr;
+    }
+    .header-title {
+        margin: auto 0;
+        justify-self: left;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .news-item {
+        grid-column: span 4;
+    }
+
+    .footer-items {
+        grid-column: span 4;
+        gap: 0;
+    }
+
+}
