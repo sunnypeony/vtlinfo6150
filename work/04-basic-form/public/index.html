@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>my webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="https://placehold.co/125" als="Logo of my website" />
+        <h1 class="header-title">Id Pariatur Lorem Amet Anim Sit Irure</h1>
+    </header>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/history.html">History</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <h2 class="content-title">Dolor Cillum Duis Excepteur Laborum Aliqua Consectetur.</h2>
+        <div class="paragraphs">
+            <p>Enim exercitation cupidatat enim non adipisicing qui aute consequat laboris nulla in.</p>
+        </div>
+
+        <!-- Form with fieldset, legend, and label -->
+        <form class="main-form" action="/submit" method="POST">
+            <!-- <p>Ullamco laborum incididunt quis laboris aliquip deserunt nisi.</p> -->
+            <!-- <div><input id="test-label" name="name" required /></div> -->
+            <fieldset class="content-fieldset">
+                <legend>Please input your information: </legend>
+                <div class="input-items">
+                    <label class="labels" for="name">Username(Required):</label>
+                    <input id="name" name="name" required />
+                </div>
+                <div class="input-items">
+                    <label class="labels" for="email">E-mail(Required): </label>
+                    <input id="email" name="email" required />
+                </div>
+                <div class="input-items">
+                    <label class="labels" for="tier">YourTier(Required): </label>
+                    <select id="tier" name="tier" required>
+                        <option value="">(Please Select)</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </div>
+            </fieldset>
+            <!-- <p>Dolore culpa labore incididunt sunt eiusmod dolore.</p> -->
+            <fieldset class="content-fieldset">
+                <legend>Subscription?</legend>
+                <div>
+                    <label>
+                        <input type="checkbox" name="annoy-me" checked required />
+                        <span class="label-text">Do you want us to send you annoying emails?</span>
+                    </label>
+                </div>
+            </fieldset>
+            <button class="register-button" type="submit">Register</button>
+        </form>
+        <div class="paragraphs">
+            <p>Eiusmod cillum deserunt culpa in voluptate anim officia ea quis dolore excepteur eu ut sit. Qui cupidatat
+                duis anim ipsum occaecat cillum non consequat proident dolore do ipsum. Commodo aute consectetur ex
+                pariatur qui reprehenderit officia fugiat cupidatat enim non ullamco ipsum deserunt. Velit ea mollit
+                aute cillum consequat esse dolor commodo eiusmod cupidatat irure consectetur commodo magna. Labore ex
+                velit esse aliqua.</p>
+            <p>Est esse anim duis adipisicing veniam laboris anim aute laborum voluptate nulla consectetur adipisicing
+                do. Occaecat esse pariatur culpa cillum elit ut ullamco qui reprehenderit anim tempor. Quis fugiat nisi
+                sint incididunt. Commodo ad dolor esse veniam anim cupidatat non consequat. Eiusmod sunt amet
+                exercitation et magna anim ullamco. Adipisicing occaecat consectetur reprehenderit officia magna quis ad
+                irure. Eu laborum incididunt nisi pariatur fugiat culpa.</p>
+            <p>Ea aute aute ea ut ea cillum laboris cillum ea cupidatat quis officia. Et pariatur labore voluptate irure
+                pariatur nulla ullamco. Ut non pariatur ad adipisicing officia.</p>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div>Here is a link to <a class="" href="">Our Privacy Policy</a></div>
+    </footer>
+</body>
+
+</html>
