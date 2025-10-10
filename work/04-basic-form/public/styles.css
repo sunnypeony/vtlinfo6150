@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-gap: 16px;
+    --main-indent-inside: 0;
+    --main-padding: 16px;
+    --main-margin: 16px;
+}
+
+button {
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: papayawhip;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: grid;
+    padding: var(--main-padding);
+    background-color: burlywood;
+}
+
+.logo {
+    display: block;
+    width: 120px;
+    justify-self: center;
+}
+
+.header-title {
+    display: block;
+    margin: var(--main-margin) auto;
+    justify-self: center;
+    background-color: dimgray;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: rgb(150, 88, 6);
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+    align-items: center;
+    border: 1px solid darkorange;
+}
+
+.menu a {
+    padding: 1rem;
+}
+
+.menu a:hover {
+    background-color: rebeccapurple;
+    color: aliceblue;
+}
+
+.main {
+    display: grid;
+    gap: var(--main-gap);
+    padding: var(--main-padding);
+    min-width: 360px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-form {
+    grid-column: span 12;
+}
+
+.content-title {
+    grid-column: span 12;
+}
+
+.input-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: var(--main-margin);
+}
+
+
+
+/*
+.content-fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 12px;
+    align-items: center;
+    border: none;
+} */
+
+
+.paragraphs {
+    grid-column: span 12;
+}
+
+.register-button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    padding: var(--main-padding);
+    background-color: burlywood;
+}
+
+@media (min-width: 40rem) {
+    .header {
+        grid-template-columns: auto 1fr;
+    }
+
+    .header-title {
+        margin: auto 0;
+        justify-self: left;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .input-items {
+        grid-template-columns: 1fr 2fr;
+        align-items: right;
+    }
+    .labels {
+        text-align: right;
+    }
+
+}
