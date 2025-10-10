@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Register Page of Bear Website</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="andy-holmes-7blhgOFY_O8-unsplash.jpg" alt="" />
+        <h1 class="header-title">Register to the Bears Website</h1>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-option">
+                    <button class="menu-name" type="button">Menu</button>
+                    <ul class="submenu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li class="menu-option">
+                    <button class="menu-name" type="button">External Links</button>
+                    <ul class="submenu">
+                        <li><a href="https://en.wikipedia.org/wiki/Bear">Wikipedia of Bear</a></li>
+                        <li><a href="https://www.mibepa.info/famous-bears-index/">Minka's Bear Passion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="main">
+        <div class="left">
+            <h2 class="ttl"><span>Lorem ipsum dolor sit amet</span></h2>
+            <img class="photo" src="t-mg-OeiohtSfVLw-unsplash.jpg" alt="a bear's first time in the water" />
+            <h3 class="lttl">Duis aute</h3>
+            <p class="text">Ut nisi et tempor id eu. Ad ea aliqua nisi magna consequat est duis eu id. Sit dolore
+                adipisicing id occaecat occaecat. Ipsum aute in aliqua cillum commodo.</p>
+            <p class="more-link"><a href="#">Ut labore… »</a></p>
+
+            <h2 class="ttl"><span>Lorem ipsum dolor sit amet</span></h2>
+            <img class="photo2" src="hans-jurgen-mager-gIWUIzYLM2A-unsplash.jpg"
+                alt="there bears are playing around on the snow ground" />
+            <h3 class="lttl">Duis aute</h3>
+            <p class="text">Ut nisi et tempor id eu. Ad ea aliqua nisi magna consequat est duis eu id. Sit dolore
+                adipisicing id occaecat occaecat. Ipsum aute in aliqua cillum commodo.</p>
+            <p class="more-link"><a href="#">Ut labore… »</a></p>
+
+            <div id="rbox">
+                <span></span>Adipisicing elit, sed do eiusmod tempor sunt in culpa qui officia.
+            </div>
+        </div>
+        <form class="main-form" action="/register" method="POST">
+            <!-- <p>Ullamco laborum incididunt quis laboris aliquip deserunt nisi.</p> -->
+            <!-- <div><input id="test-label" name="name" required /></div> -->
+            <fieldset class="content-fieldset">
+                <legend>Please input your information: </legend>
+                <div class="input-items">
+                    <label for="name">Username: </label>
+                    <input id="name" name="name" />
+                </div>
+                <div class="input-items">
+                    <label for="password">Password: </label>
+                    <input id="password" type="password" name="password" />
+                </div>
+                <div class="input-items">
+                    <label for="password-twice">Confirm Password: </label>
+                    <input id="password-twice" type="password" name="password-twice" />
+                </div>
+
+                <div class="input-items">
+                    <label for="email">E-mail( Required ): </label>
+                    <input id="email" name="email" required />
+                </div>
+                <div class="input-items">
+                    <label for="tier">YourTier(required):</label>
+                    <select id="tier" name="tier" required>
+                        <option value="">(Please Select)</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </div>
+            </fieldset>
+            <!-- <p>Dolore culpa labore incididunt sunt eiusmod dolore.</p> -->
+            <fieldset class="content-fieldset">
+                <legend>Subscription?</legend>
+                <div>
+                    <label>
+                        <input type="checkbox" name="annoy-me" checked/>
+                        <span class="label-text">Do you want us to send you annoying emails?</span>
+                    </label>
+                </div>
+            </fieldset>
+            <button class="register-button" type="submit">Register »</button>
+
+        </form>
+
+    </main>
+    <footer class="footer">
+        <div>Here is a link to <a class="" href="privacy.html">Our Privacy Policy</a></div>
+
+    </footer>
+
+</body>
+
+</html>
