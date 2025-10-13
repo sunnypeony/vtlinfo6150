@@ -1,6 +1,6 @@
 # Assignment - JS Form
 
-**Due: $SENPAI_DUE_DATE_07** 
+**Due: Wed Oct 22, 11:59pm ** 
 
 ## Submission Instructions
 
