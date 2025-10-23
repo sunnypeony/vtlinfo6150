@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-widt, initial-scale=1.0" />
+    <title>My js-form page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">Welcome To My Website</h1>
+    </header>
+    <main class="main">
+        <form class="register" action="/register" method="POST">
+            <!-- fieldset class="fieldset" -->
+            <legend>Please input your information: </legend>
+            <div class="register_items">
+                <label class="register__name-label" for="name">Name(* Required):
+                    <span class="register__name-error"></span>
+                    <span class="register__name-input"></span>
+                </label>
+                <input id="name" name="name" class="register__name" />
+            </div>
+
+            <div class="register_items">
+                <label class="register__email-label" for="email">Email(* Required):
+                    <span class="register__email-error"></span>
+                    <span class="register__email-input"></span>
+                </label>
+                <input id="email" name="email" class="register__email" />
+            </div>
+
+            <div class="register_items">
+
+                <label class="register__confirm_email-label" for="confirm_email">Confirm Email(* Should be consistent
+                    with Email):
+                    <span class="register__confirm_email-error"></span>
+                    <span class="register__confirm_email-input"></span>
+                </label>
+                <input id="confirm_email" name="email" class="register__confirm_email" />
+            </div>
+
+            <div class="register_items">
+                <label class="register__tier-label" for="tier">Tier: </label>
+                <select id="tier" name="tier" class="register__tier">
+                    <option value=" ">(Please Select)</option>
+                    <option value="1">Silver</option>
+                    <option value="2">Gold</option>
+                    <option value="3">Platinum</option>
+                </select>
+            </div>
+
+            <div class="register_items"></div>
+            <label>
+                <input type="checkbox" name="wants-spam" />
+                <span class="lable-text">Do you want to subscribe?</span>
+            </label>
+            </div>
+            <!-- /fieldset -->
+            <button class="register-button" type="submit">Register</button>
+        </form>
+
+    </main>
+    <footer class="footer">
+        <div>Here is a link to <a class="" href="privacy.html">Our Privacy Policy</a></div>
+    </footer>
+</body>
+
+</html>
