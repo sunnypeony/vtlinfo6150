@@ -1,0 +1,82 @@
+.body {
+    min-width: 360px;
+    max-width: 1000px;
+    font-size: 1rem;
+}
+
+
+.register {
+    display: grid;
+}
+
+.register_items {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+
+.register__name-label--invalid {
+    color: red;
+    border: 1px dashed red;
+}
+
+.register__name-error {
+    color: red;
+    background-color: #FF000033;
+    padding: 4px;
+}
+
+.register__name-error:empty {
+    display: none;
+}
+
+.register__name-input {
+    display: initial;
+}
+
+.register__name-input:empty {
+    display: none;
+}
+
+
+.register__email-error {
+    color: red;
+    background-color: #FF000033;
+    padding: 4px;
+}
+
+.register__email-error:empty {
+    display: none;
+}
+
+.register__email-input {
+    display: initial;
+}
+.register__email-input:empty {
+    display: none;
+}
+
+.register__confirm_email-error {
+    color: red;
+    background-color: #FF000033;
+    padding: 4px;
+}
+
+.register__confirm_email-error:empty {
+    display: none;
+}
+
+.register__confirm_email-input {
+    display: initial;
+}
+.register__confirm_email-input:empty {
+    display: none;
+}
+
+
+@media (min-width: 40rem) {
+    .register_items {
+        grid-template-columns: 2fr 1fr;
+        align-items: right;
+    }
+}
