@@ -9,7 +9,7 @@
     display: grid;
 }
 
-.register_items {
+.register-items {
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 1rem;
@@ -75,7 +75,7 @@
 
 
 @media (min-width: 40rem) {
-    .register_items {
+    .register-items {
         grid-template-columns: 2fr 1fr;
         align-items: right;
     }

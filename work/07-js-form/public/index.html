@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-widt, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My js-form page</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
@@ -16,8 +16,8 @@
     <main class="main">
         <form class="register" action="/register" method="POST">
             <!-- fieldset class="fieldset" -->
-            <legend>Please input your information: </legend>
-            <div class="register_items">
+            <p>Please input your information: </p>
+            <div class="register-items">
                 <label class="register__name-label" for="name">Name(* Required):
                     <span class="register__name-error"></span>
                     <span class="register__name-input"></span>
@@ -25,7 +25,7 @@
                 <input id="name" name="name" class="register__name" />
             </div>
 
-            <div class="register_items">
+            <div class="register-items">
                 <label class="register__email-label" for="email">Email(* Required):
                     <span class="register__email-error"></span>
                     <span class="register__email-input"></span>
@@ -33,17 +33,17 @@
                 <input id="email" name="email" class="register__email" />
             </div>
 
-            <div class="register_items">
+            <div class="register-items">
 
-                <label class="register__confirm_email-label" for="confirm_email">Confirm Email(* Should be consistent
+                <label class="register__confirm-email-label" for="confirm-email">Confirm Email(* Should be consistent
                     with Email):
-                    <span class="register__confirm_email-error"></span>
-                    <span class="register__confirm_email-input"></span>
+                    <span class="register__confirm-email-error"></span>
+                    <span class="register__confirm-email-input"></span>
                 </label>
-                <input id="confirm_email" name="email" class="register__confirm_email" />
+                <input id="confirm-email" name="confirm-email" class="register__confirm-email" />
             </div>
 
-            <div class="register_items">
+            <div class="register-items">
                 <label class="register__tier-label" for="tier">Tier: </label>
                 <select id="tier" name="tier" class="register__tier">
                     <option value=" ">(Please Select)</option>
@@ -53,7 +53,7 @@
                 </select>
             </div>
 
-            <div class="register_items"></div>
+            <div class="register-items"></div>
             <label>
                 <input type="checkbox" name="wants-spam" />
                 <span class="lable-text">Do you want to subscribe?</span>

@@ -71,7 +71,7 @@
     let isFormInvalid = false;
     const formEl = document.querySelector('.register');
     formEl.addEventListener('submit', (event) => {
-        document.querySelectorAll('.register__name', '.register__email').forEach(
+        document.querySelectorAll('.register__name, .register__email').forEach(
             node => {
                 if (node.value === "") {
                     isFormInvalid = true;
