@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    min-width: 360px;
+    max-width: 1200px;
+    background-color: papayawhip;
+    line-height: 1.6;
+}
+
+button {
+    font: inherit;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    /* move it off screen */
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: blue;
+    padding: 8px 16px;
+    z-index: 100;
+    text-decoration: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*---------- skip-link setting ------------- */
+
+.skip-link:focus {
+    top: 0;
+    /* bring it back when focused */
+}
+
+.header {
+    display: grid;
+    padding: 0;
+    background-color: burlywood;
+    grid-template-columns: auto 1fr;
+}
+
+.header-logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    justify-self: left;
+    object-fit: cover;
+}
+
+.header-title {
+    display: block;
+    margin: auto 0;
+    justify-self: center;
+}
+
+
+/*---------- hamburger manual setting ------------- */
+.hamburger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger img {
+    width: 32px;
+    height: 32px;
+}
+
+
+.nav-menu {
+    position: absolute;
+    top: calc(1rem + 40px);
+    right: 1rem;
+    background: burlywood;
+    list-style: none;
+    width: 130px;
+
+    opacity: 0;
+    transform: translateY(-5px);
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.nav-menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.submenu__item a {
+    padding: 0.5rem;
+}
+
+.submenu__item a:hover,
+.submenu__item a:focus {
+    background: dodgerblue;
+    color: white;
+}
+
+.header,
+.body {
+    position: relative;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 16px;
+    align-items: stretch;
+    
+    font: inherit;
+    min-width: 360px;
+    max-width: 1000px;
+}
+
+/*--------index.html cards setting----------*/
+.news-item {
+    border: 1px solid #ddd;
+    background-color: #eeeeee;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 4px;
+    grid-column: span 12;
+
+}
+
+#news-item-img1 {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: 300px;/* 125px looks too small*/
+}
+
+#news-item-img2 {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: 300px;/* 125px looks too small*/
+}
+
+.news-item-header {
+    margin: 0.5rem 0;
+    /*padding: 0.5rem;*/
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.text {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: block;
+    width: fit-content;
+}
+
+/*--------cats.html cards setting----------*/
+.cats-item {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: start;
+    padding: 16px;
+    border: 1px solid darkgrey;
+    border-radius: 0.5rem;
+
+    min-height: 400px;
+    min-width: auto;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+.cats-item-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.cats-item-header {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.card-content {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+
+/*------- button-link appreance ----------*/
+.subscribe {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font: inherit;
+    /* make it use the same font as surrounding text */
+    padding: 0;
+}
+
+.subscribe:hover {
+    color: darkblue;
+}
+
+.subscribe:focus {
+    outline: 2px solid lightblue;
+    outline-offset: 2px;
+}
+
+/*------------ footer setting -------*/
+.footer {
+    padding: 1rem;
+    background-color: burlywood;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/* -------- MODAL SETTING ----------*/
+
+.modal {
+    margin: auto;
+    line-height: 1.6;
+}
+
+dialog[open] .modal_title {
+    margin-bottom: 1rem;
+}
+
+dialog[open] .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    justify-content: center;
+    width: fit-content;
+}
+
+dialog[open] {
+    background-color: rgb(232, 239, 236);
+    margin: auto;
+    line-height: 1.6;
+}
+
+dialog[open] .register-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+
+dialog[open] .register-button {
+    border: solid grey 1px;
+    border-radius: 4px;
+    background-color: lime;
+    font-size: 1.2rem;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+dialog[open] .close {
+    border: solid grey 1px;
+    border-radius: 4px;
+    background-color: lightcoral;
+    font-size: 1.2rem;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+dialog[open] .register__email--invalid {
+    border-color: red;
+    border-width: thin;
+}
+
+dialog[open] .register__email-error {
+    color: red;
+}
+
+dialog[open] .register__confirm__email-error {
+    color: red;
+}
+
+/* ----------- desktop setting ----------------*/
+
+@media (min-width: 44rem) {
+    .header {
+        grid-template-columns: auto 1fr;
+    }
+
+    .header-title {
+        margin: auto 0;
+        justify-self: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .nav-menu {
+        position: static;
+        display: block !important;
+        /* 取消 hidden 影响 */
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        width: auto;
+        padding: 0;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+        background-color: burlywood;
+
+        justify-content: space-evenly;
+        margin-right: 2rem;
+
+        list-style-type: none;
+
+        padding: 0.5rem;
+        margin: 0;
+        align-items: center;
+
+    }
+
+    .submenu__item a {
+        font-weight: 500;
+    }
+
+    .submenu__item a:hover {
+        background: none;
+        background: dodgerblue;
+        color: white;
+    }
+
+    .cats-item {
+        grid-column: span 4;
+    }
+
+    .footer__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+}
