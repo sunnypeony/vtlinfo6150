@@ -1,0 +1,23 @@
+.reorder {
+    display: inline-block;
+    animation: fade-in 480ms ease-in forwards;
+}
+
+
+.reorder__button {
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
