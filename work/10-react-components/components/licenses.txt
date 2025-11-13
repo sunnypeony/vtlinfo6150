@@ -1,0 +1,17 @@
+licenses.txt
+---------------------------------
+
+Image 1:
+Local path: src/assets/nathan-da-silva-k-rKfqSm4L4-unsplash.jpg
+Source: https://unsplash.com/photos/macbook-pro-beside-white-ceramic-mug-on-brown-wooden-table-k-rKfqSm4L4
+Photographer: Nathan da Silva
+License: Unsplash License (https://unsplash.com/license)
+Description: Used on PanelsPage as example panel 1 image.
+
+Image 2:
+Local path: src/assets/domenico-loia-hGV2TfOh0ns-unsplash.jpg
+Source: https://unsplash.com/photos/macbook-pro-on-table-beside-white-imac-and-magic-mouse-hGV2TfOh0ns
+Photographer: Domenico Loia
+License: Unsplash License (https://unsplash.com/license)
+Description: Used on PanelsPage as example panel 2 image.
+
