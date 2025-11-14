@@ -1,0 +1,71 @@
+.panels {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* each panel container */
+.panel {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* allows text to wrap under images on smaller screens */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* alternate direction for second panel */
+.panel.reverse {
+  flex-direction: row-reverse;
+}
+
+/* image styling */
+.panel img {
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* text block */
+.panel__text {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+/* title styling */
+.panel__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+  color: #004466;
+}
+
+/* content text */
+.panel__content {
+  margin: 0;
+  line-height: 1.5;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* responsive touch-up for very narrow screens */
+@media (max-width: 600px) {
+  .panel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .panel.reverse {
+    flex-direction: column;
+  }
+
+  .panel img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
