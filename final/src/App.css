@@ -1,0 +1,12 @@
+/* App Component Styles */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure app displays correctly in layout */
+.app > main {
+  flex: 1;
+}

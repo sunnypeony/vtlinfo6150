@@ -1,0 +1,15 @@
+/* Footer Component Styles */
+
+.footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-lg) 0;
+  margin-top: var(--spacing-xxl);
+}
+
+.footer__text {
+  text-align: center;
+  color: var(--color-text-light);
+  margin: 0;
+}
+

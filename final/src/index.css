@@ -1,0 +1,17 @@
+/* Import global style files */
+@import './styles/variables.css';
+@import './styles/reset.css';
+@import './styles/typography.css';
+@import './styles/layout.css';
+
+/* Root element styles */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area */
+#main-content {
+  flex: 1;
+}

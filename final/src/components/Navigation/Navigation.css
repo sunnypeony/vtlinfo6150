@@ -1,0 +1,40 @@
+/* Navigation Component Styles */
+
+.navigation {
+  background-color: var(--color-surface);
+}
+
+.navigation__list {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__item {
+  list-style: none;
+}
+
+.navigation__link {
+  display: block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-base);
+}
+
+.navigation__link:hover {
+  background-color: var(--color-background);
+}
+
+.navigation__link--active {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.navigation__link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
