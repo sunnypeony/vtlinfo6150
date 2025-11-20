@@ -1,0 +1,63 @@
+licenses.txt
+---------------------------------
+
+Image 0:
+Local path: ./public/images/logo.svg
+Source: https://unsplash.com/illustrations/a-black-hole-surrounded-by-a-bright-orange-nebula-HUyZPwcLoQY
+Photographer: Mila Okta Safitri
+License: Unsplash License (https://unsplash.com/license)
+Description: Used on as logo image.
+
+Image :
+Local path: ./public/images/edit-icon.svg
+Source: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:edit_square:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=edit&icon.size=24&icon.color=%231f1f1f
+License: Google Fonts
+Description: Used as edit icon on Profile page.
+
+
+Image 1:
+Local Path: ./public/images/profile-pics/fox.svg
+Source: https://unsplash.com/illustrations/a-happy-arctic-fox-enjoys-the-snowy-landscape-nLXzTc5r3d0
+Photographer: Deep
+License: Unsplash License (https://unsplash.com/license)
+Description: Used on profile settting pages as an item from the selection list
+
+
+
+Image 2:
+Local Path: ./public/images/profile-pics/horse.svg
+Source: https://unsplash.com/illustrations/a-white-horse-silhouette-against-a-blue-background-X_0Tt3mfq04
+Photographer: Deep
+License: Unsplash License (https://unsplash.com/license)
+Description: Used on profile settting pages as an item from the selection list
+
+
+
+Image 3:
+Local Path: ./public/images/profile-pics/redfox.svg
+Source: https://unsplash.com/illustrations/a-fox-enjoys-a-winter-day-7cCdyCztdLM
+Photographer: Deep
+License: Unsplash License (https://unsplash.com/license)
+Description: Used on profile settting pages as an item from the selection list
+
+
+Image 4:
+Local Path: ./public/images/profile-pics/wolf.svg
+Source: https://unsplash.com/illustrations/a-silhouette-of-a-wolfs-head-in-a-circle-Gg2UM0Hgy4w
+Photographer: Deep
+License: Unsplash License (https://unsplash.com/license)
+Description: Used on profile settting pages as an item from the selection list
+
+
+
+
+
+
+
+https://unsplash.com/illustrations/a-happy-arctic-fox-enjoys-the-snowy-landscape-nLXzTc5r3d0
+https://unsplash.com/illustrations/a-white-horse-silhouette-against-a-blue-background-X_0Tt3mfq04
+https://unsplash.com/illustrations/a-fox-enjoys-a-winter-day-7cCdyCztdLM
+https://unsplash.com/illustrations/a-silhouette-of-a-wolfs-head-in-a-circle-Gg2UM0Hgy4w
+
+
+
